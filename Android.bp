@@ -24164,30 +24164,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND",
-    owner: "xiaomi",
-    apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
-    owner: "xiaomi",
-    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
     name: "PowerOffAlarm",
     owner: "xiaomi",
     apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -24283,15 +24259,6 @@ dex_import {
 }
 
 dex_import {
-    name: "com.android.hotwordenrollment.common.util",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
     name: "com.qti.dpmframework",
     owner: "xiaomi",
     jars: [
@@ -24322,6 +24289,15 @@ prebuilt_etc_xml {
     name: "android.hardware.neuralnetworks@1.3-service-qti.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "c2_manifest_vendor.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
