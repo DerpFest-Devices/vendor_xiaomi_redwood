@@ -559,6 +559,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     libxlog \
+    adrenoutils_extra \
     android.hardware.secure_element@1.0-impl \
     com.qti.actuator.redwood_sunny_s5khm2sd_dw9800_wide \
     com.qti.eeprom.redwood_aac_ov02b10_p24c64f_macro_eeprom \
@@ -971,6 +972,11 @@ PRODUCT_PACKAGES += \
     libxtadapter \
     ls_nq_client \
     libwvdrmengine \
+    notadreno_utils \
+    notdmabufheap \
+    notgsl \
+    notllvm-glnext \
+    notllvm-qgl \
     qcrilMarshal \
     qcrild_libqcrilnrutils \
     qtiril-utils \
